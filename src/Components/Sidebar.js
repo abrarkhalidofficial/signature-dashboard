@@ -69,7 +69,7 @@ export default function Sidebar({ setUser }) {
             type="radio"
             name="sidebar__link__input"
             onChange={() => {
-              history.push("/");
+              history.push("/dashboard/");
             }}
             id=""
             className="sidebar__link__input"
@@ -119,7 +119,7 @@ export default function Sidebar({ setUser }) {
             type="radio"
             name="sidebar__link__input"
             onChange={() => {
-              history.push("/");
+              history.push("/dashboard/building-information");
             }}
             id=""
             className="sidebar__link__input"
@@ -171,7 +171,7 @@ export default function Sidebar({ setUser }) {
               type="radio"
               name="sidebar__link__input"
               onChange={() => {
-                history.push("/");
+                history.push("/dashboard/contacts");
               }}
               id=""
               className="sidebar__link__list__item__input"
@@ -185,7 +185,7 @@ export default function Sidebar({ setUser }) {
               type="radio"
               name="sidebar__link__input"
               onChange={() => {
-                history.push("/");
+                history.push("/dashboard/call-requests");
               }}
               id=""
               className="sidebar__link__list__item__input"
@@ -195,19 +195,19 @@ export default function Sidebar({ setUser }) {
             </div>
           </div>
         </Accordian>
-        <Accordian title="Applications">
+        <Accordian title="Upcoming Projects">
           <div className="sidebar__link__list__item">
             <input
               type="radio"
               name="sidebar__link__input"
               onChange={() => {
-                history.push("/");
+                history.push("/dashboard/project-updates");
               }}
               id=""
               className="sidebar__link__list__item__input"
             />
             <div className="sidebar__link__list__item__content">
-              Contact Form
+              Projects Updates
             </div>
           </div>
           <div className="sidebar__link__list__item">
@@ -215,14 +215,12 @@ export default function Sidebar({ setUser }) {
               type="radio"
               name="sidebar__link__input"
               onChange={() => {
-                history.push("/");
+                history.push("/dashboard/gallery");
               }}
               id=""
               className="sidebar__link__list__item__input"
             />
-            <div className="sidebar__link__list__item__content">
-              Call Requests
-            </div>
+            <div className="sidebar__link__list__item__content">Gallery</div>
           </div>
         </Accordian>
       </div>

@@ -29,7 +29,7 @@ export default function Login({ setUser }) {
         <div className="login__main__container__content__logo">
           <img
             src={loginPic}
-            alt=""
+            alt="loginPic"
             className="login__main__container__content__img__logo"
           />
         </div>
