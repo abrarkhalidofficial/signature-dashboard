@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import loginPic from "../Assets/loginPic.png";
+
 function InputBox({ placeholder, label, type }) {
   return (
     <div className="login__main__container__content__input__wrapper">
@@ -24,6 +26,13 @@ export default function Login({ setUser }) {
   return (
     <div className="login__main__container">
       <div className="login__main__container__content">
+        <div className="login__main__container__content__logo">
+          <img
+            src={loginPic}
+            alt=""
+            className="login__main__container__content__img__logo"
+          />
+        </div>
         <div className="login__main__container__content__heading">Login</div>
         <InputBox placeholder="Email" label="Email" type="text" />
         <InputBox placeholder="Password" label="Password" type="password" />
