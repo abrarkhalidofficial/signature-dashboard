@@ -68,6 +68,9 @@ export default function Sidebar({ setUser }) {
           <input
             type="radio"
             name="sidebar__link__input"
+            onChange={() => {
+              history.push("/");
+            }}
             id=""
             className="sidebar__link__input"
           />
@@ -115,6 +118,9 @@ export default function Sidebar({ setUser }) {
           <input
             type="radio"
             name="sidebar__link__input"
+            onChange={() => {
+              history.push("/");
+            }}
             id=""
             className="sidebar__link__input"
           />
@@ -164,6 +170,9 @@ export default function Sidebar({ setUser }) {
             <input
               type="radio"
               name="sidebar__link__input"
+              onChange={() => {
+                history.push("/");
+              }}
               id=""
               className="sidebar__link__list__item__input"
             />
@@ -175,6 +184,9 @@ export default function Sidebar({ setUser }) {
             <input
               type="radio"
               name="sidebar__link__input"
+              onChange={() => {
+                history.push("/");
+              }}
               id=""
               className="sidebar__link__list__item__input"
             />
@@ -188,6 +200,9 @@ export default function Sidebar({ setUser }) {
             <input
               type="radio"
               name="sidebar__link__input"
+              onChange={() => {
+                history.push("/");
+              }}
               id=""
               className="sidebar__link__list__item__input"
             />
@@ -199,6 +214,9 @@ export default function Sidebar({ setUser }) {
             <input
               type="radio"
               name="sidebar__link__input"
+              onChange={() => {
+                history.push("/");
+              }}
               id=""
               className="sidebar__link__list__item__input"
             />
