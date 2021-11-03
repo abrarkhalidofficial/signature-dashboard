@@ -32,28 +32,36 @@ function Main({ setUser }) {
       <Switch>
         <Route exact path="/dashboard/" component={Dashboard} />
         <Route
+          exact
           path="/dashboard/building-information"
           component={BuildingInformation}
         />
         <Route
+          exact
           path="/dashboard/building-information/edit"
           component={EditBuildingInformation}
         />
-        <Route path="/dashboard/spaces" component={Spaces} />
-        <Route path="/dashboard/spaces/new" component={AddSpace} />
-        <Route path="/dashboard/spaces/edit" component={EditSpace} />
-        <Route path="/dashboard/contacts" component={ContactForms} />
-        <Route path="/dashboard/call-requests" component={CallRequests} />
-        <Route path="/dashboard/project-updates" component={ProjectUpdates} />
+        <Route exact path="/dashboard/spaces" component={Spaces} />
+        <Route exact path="/dashboard/spaces/new" component={AddSpace} />
+        <Route exact path="/dashboard/spaces/edit" component={EditSpace} />
+        <Route exact path="/dashboard/contacts" component={ContactForms} />
+        <Route exact path="/dashboard/call-requests" component={CallRequests} />
         <Route
+          exact
+          path="/dashboard/project-updates"
+          component={ProjectUpdates}
+        />
+        <Route
+          exact
           path="/dashboard/project-updates/new"
           component={AddProjectUpdate}
         />
         <Route
+          exact
           path="/dashboard/project-updates/edit"
           component={EditProjectUpdate}
         />
-        <Route path="/dashboard/gallery" component={Gallery} />
+        <Route exact path="/dashboard/gallery" component={Gallery} />
       </Switch>
     </div>
   );

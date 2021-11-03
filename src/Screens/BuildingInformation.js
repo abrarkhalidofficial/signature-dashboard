@@ -1,7 +1,6 @@
 import React from "react";
 import BuildInfoHeadingRow from "../Components/BuildInfoHeadingRow";
 import BuildingInfoEntryRow from "../Components/BuildingInfoEntryRow";
-import "../Styles/buildingInformation.scss";
 
 export default function BuildingInformation() {
   const tableRowEntry = [

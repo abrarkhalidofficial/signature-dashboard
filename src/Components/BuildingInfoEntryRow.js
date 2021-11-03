@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/buildingInformation.scss";
+
 import ProjectUpdateEntryImg from "../Assets/ProjectUpdateEntryImg.png";
 
 function BuildingInfoEntryRowEntry({ value, varaint }) {
