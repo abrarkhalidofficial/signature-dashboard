@@ -66,8 +66,8 @@ export default function Dashboard() {
           ]}
           series={{ showPoints: false, type: "bar" }}
           axes={[
-            { primary: true, type: "time", position: "bottom" },
-            { type: "linear", position: "left" },
+            { primary: true, type: "linear", position: "left" },
+            { position: "bottom", type: "linear", stacked: true },
           ]}
           tooltip
           dark
@@ -109,7 +109,7 @@ export default function Dashboard() {
           dark
         />
       </div>
-      <div className="dashbaord__container__chart" style={{ maxWidth: 600 }}>
+      <div className="dashbaord__container__chart" style={{ maxWidth: 500 }}>
         <div className="dashbaord__container__chart__heading">Time Spent</div>
         <Chart
           data={[
