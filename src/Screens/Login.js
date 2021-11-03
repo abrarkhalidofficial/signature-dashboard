@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import loginPic from "../Assets/loginPic.png";
+import "../Styles/login.scss";
 
 function InputBox({ placeholder, label, type }) {
   return (
