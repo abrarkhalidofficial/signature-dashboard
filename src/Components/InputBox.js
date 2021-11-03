@@ -58,7 +58,9 @@ export default function InputBox({
         className="panel__container__form__input"
         style={{ alignItems: "flex-start" }}
       >
-        <div className="panel__container__form__input__label">{label}</div>
+        {label ? (
+          <div className="panel__container__form__input__label">{label}</div>
+        ) : null}
         <div className="panel__container__form__input__pic">
           <input
             type="file"

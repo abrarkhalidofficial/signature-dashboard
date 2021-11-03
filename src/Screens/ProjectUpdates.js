@@ -8,7 +8,11 @@ export default function ProjectUpdates() {
     { heading: "Signature Hotel" },
     { heading: "96%" },
     { heading: "10/03/21" },
-    { heading: "View Message", type: "message" },
+    {
+      heading: "View Message",
+      type: "message",
+      data: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae natus qui perferendis reprehenderit sit, repellat non sunt ex hic repudiandae neque animi voluptatibus officiis dolorem rem minus iste, nostrum illum!",
+    },
     { heading: "Edit", type: "image" },
     { heading: "Edit", type: "button" },
   ];
@@ -19,13 +23,24 @@ export default function ProjectUpdates() {
     { heading: "Date" },
     { heading: "Discription" },
     { heading: "Image" },
+    { heading: "" },
   ];
   return (
     <div className="panel__container">
-      <div className="panel__container__header">Project Updates</div>
+      <div className="panel__container__header">
+        Project Updates
+        <button
+          className="panel__container__form__button"
+          style={{ width: "150px" }}
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+        >
+          Add Space
+        </button>
+      </div>
       <div className="panel__container__table">
         <BuildInfoHeadingRow tableEntryHeading={tableEntryHead} />
-
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />

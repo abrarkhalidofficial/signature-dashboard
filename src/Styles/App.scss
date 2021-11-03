@@ -74,6 +74,9 @@ body {
   color: white;
   font-weight: bold;
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .panel__container__form {
   display: flex;
@@ -130,6 +133,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
+  margin-right: 1em;
 }
 .panel__container__form__input__file {
   position: absolute;
@@ -171,4 +175,102 @@ body {
 .panel__container__form__button:hover {
   transition: 300ms ease-in-out;
   box-shadow: 0px 0px 10px #e1b84f;
+}
+.panel__container__table__headings__container,
+.panel__container__table__headings__container__reverse {
+  display: flex;
+  align-items: center;
+  padding: 0.7em 1.5em;
+  border-radius: 50px;
+  margin-bottom: 0.5em;
+}
+.panel__container__table__headings__container {
+  background-color: rgba(225, 184, 79, 0.08);
+}
+.panel__container__table__headings__container__reverse {
+  cursor: pointer;
+}
+.panel__container__table__headings__container__reverse:hover {
+  transition: 300ms ease-in-out;
+  background-color: rgba(225, 184, 79, 0.08);
+}
+.panel__container__table__entry,
+.panel__container__table__entry__reverse,
+.panel__container__table__entry__reverse__email,
+.panel__container__table__entry__reverse__massage {
+  width: 180px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel__container__table__entry {
+  color: #e1b84f;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.panel__container__table__entry__reverse__button {
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  align-items: center;
+}
+.panel__container__table__entry__reverse__button:hover {
+  transition: 300ms ease-in-out;
+  background-color: white;
+  color: #e1b84f;
+}
+.panel__container__table__entry__reverse__img {
+  width: 50px;
+}
+.panel__container__table__entry__reverse__massage {
+  position: relative;
+  text-decoration: underline;
+}
+.panel__container__table__entry__reverse__massage__data {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  color: black;
+  top: 30px;
+  width: 300px;
+  right: 0px;
+  font-size: 14px;
+  z-index: 5;
+}
+.panel__container__table__entry__reverse__massage:hover
+  .panel__container__table__entry__reverse__massage__data {
+  transition: 300ms ease-in-out;
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .panel__container__table__headings__container,
+  .panel__container__table__headings__container__reverse {
+    width: fit-content;
+  }
+  .panel__container__table__entry,
+  .panel__container__table__entry__reverse,
+  .panel__container__table__entry__reverse__email,
+  .panel__container__table__entry__reverse__massage {
+    min-width: 120px;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    height: fit-content;
+  }
 }

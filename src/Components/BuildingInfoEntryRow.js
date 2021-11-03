@@ -2,17 +2,22 @@ import React from "react";
 
 import ProjectUpdateEntryImg from "../Assets/ProjectUpdateEntryImg.png";
 
-function BuildingInfoEntryRowEntry({ value, varaint }) {
+function BuildingInfoEntryRowEntry({ value, varaint, data }) {
   if (varaint === "button") {
     return (
-      <button className="panel__container__table__entry__reverse__button">
-        {value}
-      </button>
+      <div className="panel__container__table__entry__reverse">
+        <button className="panel__container__table__entry__reverse__button">
+          {value}
+        </button>
+      </div>
     );
   } else if (varaint === "message") {
     return (
       <div className="panel__container__table__entry__reverse__massage">
         {value}
+        <div className="panel__container__table__entry__reverse__massage__data">
+          {data}
+        </div>
       </div>
     );
   } else if (varaint === "email") {
@@ -23,7 +28,7 @@ function BuildingInfoEntryRowEntry({ value, varaint }) {
     );
   } else if (varaint === "image") {
     return (
-      <div className="panel__container__table__entry__reverse__img__content">
+      <div className="panel__container__table__entry__reverse">
         <img
           src={ProjectUpdateEntryImg}
           alt="ProjectUpdateEntryImg"
@@ -54,6 +59,7 @@ export default function BuildingInfoEntryRow({ tableEntry }) {
               ? "email"
               : null
           }
+          data={item.data && item.data}
         />
       ))}
     </div>

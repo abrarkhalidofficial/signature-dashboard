@@ -16,13 +16,25 @@ export default function BuildingInformation() {
     { heading: "Floor Name" },
     { heading: "Total Spaces" },
     { heading: "Booked Spaces" },
+    { heading: "" },
+    { heading: "" },
   ];
   return (
     <div className="panel__container">
-      <div className="panel__container__header">Building Information</div>
+      <div className="panel__container__header">
+        Building Information
+        <button
+          className="panel__container__form__button"
+          style={{ width: "150px" }}
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+        >
+          Add Space
+        </button>
+      </div>
       <div className="panel__container__table">
         <BuildInfoHeadingRow tableEntryHeading={tableEntryHead} />
-
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
