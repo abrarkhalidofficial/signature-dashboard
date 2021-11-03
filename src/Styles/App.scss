@@ -62,12 +62,19 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  padding: 4em 2em;
+  padding: 3em 2em;
 }
 .login__main__container__content__heading {
   font-size: 22px;
-  margin: 0px auto;
   color: #e1b84f;
+}
+.login__main__container__content__img__logo {
+  width: 90px;
+}
+.login__main__container__content__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1em;
 }
 .login__main__container__content__input__wrapper {
