@@ -1,12 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "../Styles/sidebar.scss";
 
-function Accordian({ title, value, children }) {
+function Accordian({ title, value, children, onChange }) {
   return (
     <>
       <div className="sidebar__link">
         <input
           type="radio"
+          onChange={onChange}
           name="sidebar__link__input"
           id=""
           className="sidebar__link__input"
@@ -56,7 +58,8 @@ function Accordian({ title, value, children }) {
     </>
   );
 }
-export default function Sidebar() {
+export default function Sidebar({ setUser }) {
+  const history = useHistory();
   return (
     <div className="sidebar">
       <div className="sidebar__header">Admin Panel</div>
@@ -211,6 +214,11 @@ export default function Sidebar() {
             type="radio"
             name="sidebar__link__input"
             id=""
+            onChange={() => {
+              setUser(false);
+              window.localStorage.setItem("user", false);
+              history.push("/");
+            }}
             className="sidebar__link__input"
           />
           <div className="sidebar__link__content">

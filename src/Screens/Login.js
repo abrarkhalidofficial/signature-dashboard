@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 function InputBox({ placeholder, label, type }) {
   return (
@@ -17,6 +17,10 @@ function InputBox({ placeholder, label, type }) {
 
 export default function Login({ setUser }) {
   const history = useHistory();
+  useEffect(() => {
+    setUser(false);
+    window.localStorage.setItem("user", false);
+  }, []);
   return (
     <div className="login__main__container">
       <div className="login__main__container__content">
@@ -45,6 +49,7 @@ export default function Login({ setUser }) {
           className="login__main__container__content__cta"
           onClick={() => {
             setUser(true);
+            window.localStorage.setItem("user", true);
             history.push("/dashboard/");
           }}
         >
