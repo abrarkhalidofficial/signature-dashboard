@@ -33,15 +33,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header user={user} />
         <main className="main">
-          <Sidebar />
+          {user ? <Sidebar /> : null}
           <div className="main__container">
             <Switch>
               <Route exact path="/">
                 <Login setUser={setUser} />
               </Route>
-              <Route path="/dashbaord" component={Dashbaord} />
+              <Route path="/dashboard" component={Dashbaord} />
               <Route
                 path="/building-information"
                 component={BuildingInformation}
