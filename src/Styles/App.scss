@@ -15,7 +15,6 @@ body {
   font-family: "Lato", sans-serif;
   background: url("../Assets//bg.png"), no-repeat;
   background-size: cover;
-  color: white;
 }
 .App {
   width: 100%;
@@ -23,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
+  height: 80vh;
 }
 .header {
   display: flex;
@@ -38,16 +38,8 @@ body {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.sidebar {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  margin-right: 2em;
-  max-width: 300px;
-}
+
 .main__container {
   flex: 1;
   background: rgba(255, 255, 255, 0.2);

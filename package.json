@@ -1,5 +1,5 @@
 {
-  "name": "signature-dashbaord",
+  "name": "signature-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
-    "react-accessible-accordion": "^4.0.0",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",
     "react-onclickoutside": "^6.12.0",

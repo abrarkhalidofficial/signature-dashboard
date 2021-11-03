@@ -7,7 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Login from "./Screens/Login";
-import Dashbaord from "./Screens/Dashbaord";
+import dashboard from "./Screens/dashboard";
 import BuildingInformation from "./Screens/BuildingInformation";
 import EditBuildingInformation from "./Screens/EditBuildingInformation";
 import ContactForms from "./Screens/ContactForms";
@@ -26,7 +26,7 @@ function Main() {
   return (
     <div className="main__container">
       <Switch>
-        <Route path="/dashboard/" component={Dashbaord} />
+        <Route exact path="/dashboard/" component={dashboard} />
         <Route
           path="/dashboard/building-information"
           component={BuildingInformation}

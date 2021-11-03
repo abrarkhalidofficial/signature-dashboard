@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useHistory } from "react-router-dom";
 function InputBox({ placeholder, label, type }) {
   return (
     <div className="login__main__container__content__input__wrapper">
@@ -15,7 +15,8 @@ function InputBox({ placeholder, label, type }) {
   );
 }
 
-export default function Login() {
+export default function Login({ setUser }) {
+  const history = useHistory();
   return (
     <div className="login__main__container">
       <div className="login__main__container__content">
@@ -40,7 +41,15 @@ export default function Login() {
             Remember Me
           </label>
         </div>
-        <button className="login__main__container__content__cta">Login</button>
+        <button
+          className="login__main__container__content__cta"
+          onClick={() => {
+            setUser(true);
+            history.push("/dashboard/");
+          }}
+        >
+          Login
+        </button>
       </div>
     </div>
   );

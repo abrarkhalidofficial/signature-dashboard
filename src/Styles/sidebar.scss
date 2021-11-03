@@ -1,0 +1,120 @@
+.sidebar {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-right: 2em;
+  max-width: 300px;
+  padding: 1.5em 0em;
+  border-radius: 10px;
+}
+.sidebar__header {
+  flex: 1;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  margin: 0em 1.5em;
+  padding-bottom: 0.8em;
+  color: white;
+}
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em 0em;
+  min-height: 600px;
+}
+.sidebar__link {
+  position: relative;
+  margin: 0em 1.3em;
+  margin-bottom: 0.5em;
+}
+.sidebar__link__input {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.sidebar__link__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.7em 1em;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: white;
+}
+.sidebar__link__content__svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+  color: #e1b84f;
+}
+.sidebar__link__content span {
+  margin-left: auto;
+  min-width: 22px;
+  height: 22px;
+  background-color: #52575d;
+  color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+.sidebar__link__input:hover ~ .sidebar__link__content,
+.sidebar__link__input:checked ~ .sidebar__link__content {
+  transition: 300ms ease-in-out;
+  background-color: #e1b84f;
+}
+.sidebar__link__input:hover
+  ~ .sidebar__link__content
+  .sidebar__link__content__svg,
+.sidebar__link__input:checked
+  ~ .sidebar__link__content
+  .sidebar__link__content__svg {
+  transition: 300ms ease-in-out;
+  color: white;
+}
+.sidebar__link__list {
+  margin: 0em 1.3em;
+}
+.sidebar__link__list__item {
+  position: relative;
+  margin-left: 3em;
+  margin-bottom: 0.5em;
+}
+.sidebar__link__list__item__input {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.sidebar__link__list__item__content {
+  flex: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0.7em 1.2em;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: white;
+}
+.sidebar__link__list__item__input:hover ~ .sidebar__link__list__item__content,
+.sidebar__link__list__item__input:checked
+  ~ .sidebar__link__list__item__content {
+  transition: 300ms ease-in-out;
+  background-color: #e1b84f;
+}
+.sidebar__footer {
+  flex: 1;
+  font-size: 16px;
+  border-top: 1px solid white;
+  margin: 0em 1.5em;
+  padding-top: 0.8em;
+}
