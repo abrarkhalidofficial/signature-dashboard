@@ -56,7 +56,7 @@ function Main() {
 }
 
 function App() {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   // useEffect(() => {
   //   if (!user) {
   //     <Redirect path="/" />;
