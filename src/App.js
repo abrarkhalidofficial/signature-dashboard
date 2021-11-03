@@ -22,8 +22,41 @@ import EditSpace from "./Screens/EditSpace";
 import Header from "./Components/Header";
 import Sidebar from "./Components/Sidebar";
 
+function Main() {
+  return (
+    <div className="main__container">
+      <Switch>
+        <Route path="/dashboard/" component={Dashbaord} />
+        <Route
+          path="/dashboard/building-information"
+          component={BuildingInformation}
+        />
+        <Route
+          path="/dashboard/building-information/edit"
+          component={EditBuildingInformation}
+        />
+        <Route path="/dashboard/spaces" component={Spaces} />
+        <Route path="/dashboard/spaces/new" component={AddSpace} />
+        <Route path="/dashboard/spaces/edit" component={EditSpace} />
+        <Route path="/dashboard/contacts" component={ContactForms} />
+        <Route path="/dashboard/call-requests" component={CallRequests} />
+        <Route path="/dashboard/project-updates" component={ProjectUpdates} />
+        <Route
+          path="/dashboard/project-updates/new"
+          component={AddProjectUpdate}
+        />
+        <Route
+          path="/dashboard/project-updates/edit"
+          component={EditProjectUpdate}
+        />
+        <Route path="/dashboard/gallery" component={Gallery} />
+      </Switch>
+    </div>
+  );
+}
+
 function App() {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   // useEffect(() => {
   //   if (!user) {
   //     <Redirect path="/" />;
@@ -36,34 +69,14 @@ function App() {
         <Header user={user} />
         <main className="main">
           {user ? <Sidebar /> : null}
-          <div className="main__container">
-            <Switch>
-              <Route exact path="/">
-                <Login setUser={setUser} />
-              </Route>
-              <Route path="/dashboard" component={Dashbaord} />
-              <Route
-                path="/building-information"
-                component={BuildingInformation}
-              />
-              <Route
-                path="/building-information/edit"
-                component={EditBuildingInformation}
-              />
-              <Route path="/spaces" component={Spaces} />
-              <Route path="/spaces/new" component={AddSpace} />
-              <Route path="/spaces/edit" component={EditSpace} />
-              <Route path="/contacts" component={ContactForms} />
-              <Route path="/call-requests" component={CallRequests} />
-              <Route path="/project-updates" component={ProjectUpdates} />
-              <Route path="/project-updates/new" component={AddProjectUpdate} />
-              <Route
-                path="/project-updates/edit"
-                component={EditProjectUpdate}
-              />
-              <Route path="/gallery" component={Gallery} />
-            </Switch>
-          </div>
+          <Switch>
+            <Route exact path="/">
+              <Login setUser={setUser} />
+            </Route>
+            <Route path="/dashboard">
+              <Main />
+            </Route>
+          </Switch>
         </main>
       </Router>
     </div>
