@@ -122,6 +122,10 @@ body {
   padding: 1em;
   height: 200px;
 }
+.panel__container__form__input__field::placeholder,
+.panel__container__form__input__textarea::placeholder {
+  color: white;
+}
 .panel__container__form__input__field option {
   background-color: white;
   color: black;

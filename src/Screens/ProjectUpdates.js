@@ -6,7 +6,7 @@ import BuildingInfoEntryRow from "../Components/BuildingInfoEntryRow";
 export default function ProjectUpdates() {
   const history = useHistory();
   const tableRowEntry = [
-    { heading: "Serial#" },
+    { heading: "1" },
     { heading: "Signature Hotel" },
     { heading: "96%" },
     { heading: "10/03/21" },
@@ -42,7 +42,7 @@ export default function ProjectUpdates() {
             history.push("/dashboard/project-updates-new");
           }}
         >
-          Add Space
+          Add Project
         </button>
       </div>
       <div className="panel__container__table">
