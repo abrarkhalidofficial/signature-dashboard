@@ -8,13 +8,21 @@ export default function InputBox({
   type,
   options,
   placeholder1,
+  style,
+  isInTable,
 }) {
   const [uploadedImg, setUploadedImg] = useState(false);
   if (variant === "select") {
     return (
-      <div className="panel__container__form__input">
+      <div
+        className="panel__container__form__input"
+        style={isInTable ? { marginBottom: "0em" } : null}
+      >
         <div className="panel__container__form__input__label">{label}</div>
-        <select className="panel__container__form__input__field">
+        <select
+          className="panel__container__form__input__field"
+          style={style ? style : null}
+        >
           {options.map((option) => (
             <option value={option.value}>{option.label}</option>
           ))}

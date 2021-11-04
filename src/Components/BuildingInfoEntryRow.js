@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import InputBox from "./InputBox";
 import ProjectUpdateEntryImg from "../Assets/ProjectUpdateEntryImg.png";
 
 function BuildingInfoEntryRowEntry({ value, varaint, data, path }) {
@@ -40,6 +41,29 @@ function BuildingInfoEntryRowEntry({ value, varaint, data, path }) {
           src={ProjectUpdateEntryImg}
           alt="ProjectUpdateEntryImg"
           className="panel__container__table__entry__reverse__img"
+        />
+      </div>
+    );
+  } else if (varaint === "select") {
+    return (
+      <div className="panel__container__table__entry__reverse">
+        <InputBox
+          variant="select"
+          style={{
+            minWidth: "100px",
+            marginRight: "3em",
+          }}
+          isInTable
+          options={[
+            {
+              label: "hey",
+              value: "1",
+            },
+            {
+              label: "hey",
+              value: "1",
+            },
+          ]}
         />
       </div>
     );
@@ -88,6 +112,8 @@ export default function BuildingInfoEntryRow({ tableEntry }) {
               ? "image-more"
               : item.type === "email"
               ? "email"
+              : item.type === "select"
+              ? "select"
               : null
           }
           data={item.data && item.data}

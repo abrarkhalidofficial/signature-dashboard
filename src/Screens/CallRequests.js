@@ -9,7 +9,7 @@ export default function CallRequests() {
     { heading: "232 343 3248" },
     {
       heading: "View Message",
-      type: "message",
+      type: "select",
       data: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae natus qui perferendis reprehenderit sit, repellat non sunt ex hic repudiandae neque animi voluptatibus officiis dolorem rem minus iste, nostrum illum!",
     },
   ];
