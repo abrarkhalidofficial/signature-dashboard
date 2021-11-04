@@ -348,38 +348,24 @@ export default function Sidebar({ setUser }) {
           <div className="sidebar__link__content">
             <div className="sidebar__link__content__svg">
               <svg
-                id="files"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
-                viewBox="0 0 28.962 26.314"
+                viewBox="0 0 29.81 28.805"
               >
-                <path
-                  id="Path_26"
-                  data-name="Path 26"
-                  d="M905.359,2347.677h22.913l3.025-19.154H902.335Zm20.777-2.5H907.5l-2.235-14.154h23.11Z"
-                  transform="translate(-902.335 -2321.363)"
-                />
-                <rect
-                  id="Rectangle_17"
-                  data-name="Rectangle 17"
-                  width="10.086"
-                  height="2.5"
-                  transform="translate(9.437 12.79)"
-                />
-                <rect
-                  id="Rectangle_18"
-                  data-name="Rectangle 18"
-                  width="23.925"
-                  height="2.5"
-                  transform="translate(2.518 3.58)"
-                />
-                <rect
-                  id="Rectangle_19"
-                  data-name="Rectangle 19"
-                  width="18.452"
-                  height="2.5"
-                  transform="translate(5.255)"
-                />
+                <g id="loguot" transform="translate(29.81 28.805) rotate(180)">
+                  <path
+                    id="Path_31"
+                    data-name="Path 31"
+                    d="M0,7.479H13.665l-3.457,3.127,1.677,1.854,6.89-6.23L11.885,0,10.208,1.854l3.457,3.126H0Z"
+                    transform="translate(0 8.173)"
+                  />
+                  <path
+                    id="Path_32"
+                    data-name="Path 32"
+                    d="M24.313,0H0V6.1H2.5V2.5H21.813V26.3H2.5v-3.66H0V28.8H24.313Z"
+                    transform="translate(5.496)"
+                  />
+                </g>
               </svg>
             </div>
             Logout

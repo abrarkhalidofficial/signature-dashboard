@@ -278,3 +278,37 @@ body {
     height: fit-content;
   }
 }
+.dashbaord__container__chart g:nth-child(1) rect {
+  fill: #69003c !important;
+  stroke: #69003c !important;
+}
+.dashbaord__container__chart g:nth-child(2) rect {
+  fill: #e1b84f !important;
+  stroke: #e1b84f !important;
+}
+.dashbaord__container__chart g:nth-child(1) path {
+  // fill: #69003c !important;
+  stroke: #69003c !important;
+  stroke-width: 3px !important;
+}
+.dashbaord__container__chart g:nth-child(2) path {
+  // fill: #e1b84f !important;
+  stroke: #e1b84f !important;
+  stroke-width: 3px !important;
+}
+.dashbaord__container__chart__fill g:nth-child(1) path:nth-child(1) {
+  fill: #69003c !important;
+  stroke: transparent !important;
+}
+.dashbaord__container__chart__fill g:nth-child(2) path:nth-child(1) {
+  fill: #e1b84f !important;
+  stroke: transparent !important;
+}
+.dashbaord__container__chart tr:nth-child(1) td:nth-child(1) svg circle {
+  fill: #69003c !important;
+  stroke: #69003c !important;
+}
+.dashbaord__container__chart tr:nth-child(2) td:nth-child(1) svg circle {
+  fill: #e1b84f !important;
+  stroke: #e1b84f !important;
+}

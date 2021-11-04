@@ -73,7 +73,7 @@ export default function Dashboard() {
           dark
         />
       </div>
-      <div className="dashbaord__container__chart">
+      <div className="dashbaord__container__chart dashbaord__container__chart__fill">
         <div className="dashbaord__container__chart__heading">
           Traffic Sources
         </div>
