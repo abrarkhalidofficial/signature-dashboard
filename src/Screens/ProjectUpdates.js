@@ -1,8 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import BuildInfoHeadingRow from "../Components/BuildInfoHeadingRow";
 import BuildingInfoEntryRow from "../Components/BuildingInfoEntryRow";
 
 export default function ProjectUpdates() {
+  const history = useHistory();
   const tableRowEntry = [
     { heading: "Serial#" },
     { heading: "Signature Hotel" },
@@ -14,7 +16,11 @@ export default function ProjectUpdates() {
       data: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae natus qui perferendis reprehenderit sit, repellat non sunt ex hic repudiandae neque animi voluptatibus officiis dolorem rem minus iste, nostrum illum!",
     },
     { heading: "Edit", type: "image" },
-    { heading: "Edit", type: "button" },
+    {
+      heading: "Edit",
+      type: "button",
+      path: "/dashboard/project-updates-edit",
+    },
   ];
   const tableEntryHead = [
     { heading: "Serial#" },
@@ -32,8 +38,8 @@ export default function ProjectUpdates() {
         <button
           className="panel__container__form__button"
           style={{ width: "150px" }}
-          onClick={(e) => {
-            e.preventDefault();
+          onClick={() => {
+            history.push("/dashboard/project-updates-new");
           }}
         >
           Add Space

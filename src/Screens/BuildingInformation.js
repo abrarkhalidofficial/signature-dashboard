@@ -8,8 +8,16 @@ export default function BuildingInformation() {
     { heading: "Floor Name" },
     { heading: "11232" },
     { heading: "56321" },
-    { heading: "Details", type: "button" },
-    { heading: "Edit", type: "button" },
+    {
+      heading: "Details",
+      type: "button",
+      path: "/dashboard/spaces",
+    },
+    {
+      heading: "Edit",
+      type: "button",
+      path: "/dashboard/building-information-edit",
+    },
   ];
   const tableEntryHead = [
     { heading: "Floor" },
@@ -21,18 +29,7 @@ export default function BuildingInformation() {
   ];
   return (
     <div className="panel__container">
-      <div className="panel__container__header">
-        Building Information
-        <button
-          className="panel__container__form__button"
-          style={{ width: "150px" }}
-          onClick={(e) => {
-            e.preventDefault();
-          }}
-        >
-          Add Space
-        </button>
-      </div>
+      <div className="panel__container__header">Building Information</div>
       <div className="panel__container__table">
         <BuildInfoHeadingRow tableEntryHeading={tableEntryHead} />
         <BuildingInfoEntryRow tableEntry={tableRowEntry} />
