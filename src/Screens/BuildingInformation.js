@@ -6,8 +6,8 @@ export default function BuildingInformation() {
   const tableRowEntry = [
     { heading: "Floor#" },
     { heading: "Floor Name" },
-    { heading: "11232" },
-    { heading: "56321" },
+    { heading: "12" },
+    { heading: "56" },
     {
       heading: "Details",
       type: "button",

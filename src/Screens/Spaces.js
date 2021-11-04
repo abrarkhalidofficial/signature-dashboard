@@ -6,10 +6,10 @@ import BuildingInfoEntryRow from "../Components/BuildingInfoEntryRow";
 export default function Spaces() {
   const history = useHistory();
   const tableRowEntry = [
-    { heading: "Floor#" },
-    { heading: "Floor Name" },
-    { heading: "11232" },
-    { heading: "56321" },
+    { heading: "1" },
+    { heading: "Sold Out" },
+    { heading: "23x43" },
+    { heading: "Fahad Ayyaz" },
     { heading: "Edit", type: "image-more" },
     {
       heading: "Edit",
@@ -18,10 +18,10 @@ export default function Spaces() {
     },
   ];
   const tableEntryHead = [
-    { heading: "Floor" },
-    { heading: "Floor Name" },
-    { heading: "Total Spaces" },
-    { heading: "Booked Spaces" },
+    { heading: "Floor#" },
+    { heading: "Status" },
+    { heading: "Area" },
+    { heading: "Owner Name" },
     { heading: "Image" },
     { heading: "" },
   ];
